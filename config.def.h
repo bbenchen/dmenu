@@ -8,7 +8,7 @@ static int centered = 0;                    /* -c option; centers dmenu on scree
 static int min_width = 600;                 /* minimum width when centered */
 /* -fn option overrides fonts[0]; default X11 font or font set */
 static const char *fonts[] = {
-	"monospace:size=10"
+	"Sarasa Mono SC Nerd:size=10"
 };
 static const char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
 
@@ -22,8 +22,8 @@ static const unsigned int alphas[][3]      = {
 
 static const char *colors[SchemeLast][2] = {
 	/*     fg         bg       */
-	[SchemeNorm] = { "#bbbbbb", "#222222" },
-	[SchemeSel] = { "#eeeeee", "#005577" },
+	[SchemeNorm] = { "#d8dee9", "#2e3440" },
+	[SchemeSel] = { "#2e3440", "#81a1c1" },
 	[SchemeSelHighlight] = { "#ffc978", "#005577" },
 	[SchemeNormHighlight] = { "#ffc978", "#222222" },
 	[SchemeOut] = { "#000000", "#00ffff" },
