@@ -6,6 +6,7 @@ static int fuzzy = 1;                       /* -F  option; if 0, dmenu doesn't u
 static double opacity = 1.0;                /* -o  option; defines alpha translucency        */
 static int centered = 0;                    /* -c option; centers dmenu on screen */
 static int min_width = 600;                 /* minimum width when centered */
+static int padding = 5;                     /* padding */
 /* -fn option overrides fonts[0]; default X11 font or font set */
 static const char *fonts[] = {
 	"Sarasa Mono SC Nerd:size=10"

@@ -894,9 +894,9 @@ setup(void)
 			x = info[i].x_org + ((info[i].width  - mw) / 2);
 			y = info[i].y_org + ((info[i].height - mh) / 2);
 		} else {
-			x = info[i].x_org;
-			y = info[i].y_org + (topbar ? 0 : info[i].height - mh);
-			mw = info[i].width;
+			x = info[i].x_org + padding;
+			y = info[i].y_org + (topbar ? padding : info[i].height - mh);
+			mw = info[i].width - 2 * padding;
 		}
 
 		XFree(info);
@@ -912,9 +912,9 @@ setup(void)
 			x = (wa.width  - mw) / 2;
 			y = (wa.height - mh) / 2;
 		} else {
-			x = 0;
-			y = topbar ? 0 : wa.height - mh;
-			mw = wa.width;
+			x = padding;
+			y = topbar ? padding : wa.height - mh;
+			mw = wa.width - 2 * padding;
 		}
 	}
 	inputw = MIN(inputw, mw/3);
