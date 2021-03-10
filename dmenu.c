@@ -895,7 +895,7 @@ setup(void)
 			y = info[i].y_org + ((info[i].height - mh) / 2);
 		} else {
 			x = info[i].x_org + padding;
-			y = info[i].y_org + (topbar ? padding : info[i].height - mh);
+			y = info[i].y_org + (topbar ? padding : info[i].height - mh - padding);
 			mw = info[i].width - 2 * padding;
 		}
 
@@ -913,7 +913,7 @@ setup(void)
 			y = (wa.height - mh) / 2;
 		} else {
 			x = padding;
-			y = topbar ? padding : wa.height - mh;
+			y = topbar ? padding : wa.height - mh - padding;
 			mw = wa.width - 2 * padding;
 		}
 	}
